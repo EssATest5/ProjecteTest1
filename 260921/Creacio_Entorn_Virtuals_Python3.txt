@@ -1,0 +1,29 @@
+CREACIO ENTORN VIRTUAL DE PYTHON (CONTENIDOR DOCKER? SANDBOX?)
+
+PREVI. Almenys a la WSL, cal previ pas a la creació de venv instal .lar a linux el paquet
+python3.13-venv
+
+Per això ha calgut fer :
+apt install python3.13-venv
+
+1. Primer decidim on el guardarem. Per exemple, a alumne Mati
+
+cd /
+cd mnt
+cd c
+cd Users/
+cd Alumne mati1/-
+2. Creo l'entorn virtual (venv) amb nom de "projecte"
+
+python3 -m venv projecte
+3. Dins de la carpeta Alumne matil on he creat l'entorn virtual l'activo
+
+source projecte/bin/activate
+
+NOTA. La terminal apareix amb el prefix del nom del projecte entre parentesis
+(projecte) ......
+4. Treballes, instal.les, bufes, pateixes, somrius .... i quan plegues el desactive amb deactivate
+
+...
+
+--- /mnt/c/Users/Alumne_mati1/

@@ -1,0 +1,22 @@
+Recuperar una contrasenya de Linux (Debian):
+
+Es pot deixar en "blanc". 
+
+Cal accedir a l'arxiu :
+
+/etc/shadows
+
+i a la segona possició de l'usuari en questió reemplaçar la cadena que tingui per 
+
+:U6aMy0wojraho:
+
+que és la contrasenya en blanc encriptada.
+
+Exemple per l'usuari giro: 
+
+giro:U6aMy0wojraho:20362: 0:99999:7: : :
+
+
+Si cal llegit La SD des de Windows cal installar un lector de EXT4 per Windows: 
+
+PARAGON software . Installar en demo per uns dies.  

@@ -1,0 +1,8 @@
+nmcli connection add type wifi ifname wlan0 con-name "Violeta-I32" ssid "Violeta-I32"
+nmcli connection modify "Violeta-I32" wifi-sec.key-mgmt wpa-psk
+nmcli connection modify "Violeta-I32" wifi-sec.psk "50681914#Fdh7"
+nmcli connection up "Violeta-I32"
+ip a
+ping 8.8.8.8
+
+

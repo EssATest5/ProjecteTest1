@@ -1,0 +1,41 @@
+Per fer les diferents practiques amb dos leds:
+
+PROVAREM EL TEMA DELS DOS LEDS AMB DIFERENTS CODIS
+
+A) Time.sleep basic.
+B) Slicing.
+C) Multithreading.
+D) Multiprocess.
+
+A la RPi
+----------------------
+1. Connectarem la raspberry a un monitor per HDMI.
+NOTA. Si el monitor no té HDMI sinó només VGA, caldrà un adaptador VGA 2 HDMI
+
+2. Quan arriba al terminal escriurem usuari i contrasenya (pi/raspberry)
+
+3. sudo su
+
+4. ip a per anotar la mac address de la targeta wifi de la raspberry
+
+5. raspi-config
+
+    -Configurem Violeta-132 com wifi : 50681914#Fdh7
+    -Comprovem que tot va be perque al fer ip a ens apareix una ip 192.X.Y.Z i apart ping 8.8.8.8
+    -Habilitarem ssh
+    
+Al PC
+-----------------------
+
+6. WinSCP passarem els codis a la raspberry
+7. Putty i ens connectarem a la raspberry per primera vegada
+8. Se suposa que haurem muntat el circuit i executarem els codis amb els següents comandaments:
+    
+    ps aux | grep python > PID > kill -9 PID ||||| Netejar el GPIO
+
+    nohup python3 codi1.py
+       Abans de executar el seguent matarem el process amb: ps aux | grep python > PID > kill -9 PID ||||| Netejar el GPIO
+       
+    nohup python3 codi2.py
+    nohup python3 codi3.py
+    nohup python3 codi4.py

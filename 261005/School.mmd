@@ -1,0 +1,7 @@
+flowchart TD
+    A("Leave Home") --> B[Check time]
+    B --> C{Before 7 am?}
+    C --> |NO| D(Take bus)
+    C --> |SI| E(Take Subway)
+    D --> F(Reach School)
+    E --> F

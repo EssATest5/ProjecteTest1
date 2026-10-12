@@ -1,0 +1,30 @@
+Es pot fer servir un ll'apis USB per arrencar. 
+
+Amb Imager en comtes d'una SD fer servir un USB.
+
+A les RPi 3B+ (del 17 en dendevant) i sup ja funciona directament conectant l'USB al port superior dret de la RPi
+
+A les anteriors cal arrencar la RPi un cop amb un arxiu modificat que habilita un parametre a la "bios" de la RPi 
+i ja queda quardat per propers arranca i parmet llegir i arrencar de USB
+
+Accedir a la partició FAT32 de la SD i modificar l'arxiu config.txt. 
+Al final hi ha l'apartat [all] i cal afegir la llinia: 
+program_usb_timeout=1
+
+[all]
+program_usb_timeout=1
+
+Un cop arrencada la RPi amb aqeust parametre activat ja es guarda el timeout a la seva memoria interna ("bios")
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+Question about program_usb_timeout
+Sat Apr 14, 2018 7:26 pm
+
+I have read how to enable booting from a USB drive here:
+https://www.raspberrypi.org/documentati ... ootflow.md. It mentions that if a USB
+device fails to respond quickly enough once the Pi activates its USB ports, the setting
+"program_usb_timeout=1" can be used in config.txt to tell the Pi to wait 5 seconds
+(instead of 2) for USB devices to become ready. I'm guessing the only way this can
+work is for the Pi to be booted successfully at least once with this setting in the
+config.txt file, then on subsequent boots the delay will be extended to 5 seconds (from

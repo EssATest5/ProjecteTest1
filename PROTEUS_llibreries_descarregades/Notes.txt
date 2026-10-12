@@ -1,0 +1,3 @@
+Llibreria amb molts sensors per proteus
+
+https://github.com/albaloshi1996/Proteus-Libraries-
